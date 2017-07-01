@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="fxc" location="289,18" size="251,549">
+    <action name="FindMonitor_*" location="53,62" size="180,104">
+      <result name="FindShop">
+        <resourceEdge source="FindShop" routing="0" target="FindShopMonitorInfo.jsp" />
+      </result>
+      <result name="FindMachine">
+        <resourceEdge source="FindMachine" routing="0" target="FindMachineMonitorInfo.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="MonitorInfoList.jsp" />
+      </result>
+    </action>
+    <action name="FindHandling_*" location="41,229" size="193,83">
+      <result name="Find">
+        <resourceEdge source="Find" routing="0" target="FindHandlingInfo.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="HandlingInfoList.jsp" />
+      </result>
+    </action>
+    <action name="FindStatistics_*" location="43,384" size="191,83">
+      <result name="Find">
+        <resourceEdge source="Find" routing="0" target="FindStatisticsInfo.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="StatisticsInfoList.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="error.jsp" path="/fxc/error.jsp" location="41,259" size="150,55" />
+  <webResource name="MonitorInfoList.jsp" path="/fxc/MonitorInfoList.jsp" location="831,111" size="150,55" />
+  <webResource name="FindHandlingInfo.jsp" path="/fxc/FindHandlingInfo.jsp" location="654,233" size="150,55" />
+  <webResource name="HandlingInfoList.jsp" path="/fxc/HandlingInfoList.jsp" location="829,277" size="150,55" />
+  <webResource name="FindStatisticsInfo.jsp" path="/fxc/FindStatisticsInfo.jsp" location="655,381" size="150,55" />
+  <webResource name="StatisticsInfoList.jsp" path="/fxc/StatisticsInfoList.jsp" location="831,433" size="150,55" />
+  <webResource name="FindShopMonitorInfo.jsp" path="/fxc/FindShopMonitorInfo.jsp" location="27,350" size="176,55" />
+  <webResource name="FindMachineMonitorInfo.jsp" path="/fxc/FindMachineMonitorInfo.jsp" location="50,500" size="150,55" />
+</Struts2Diagram>
+

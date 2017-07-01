@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="users" namespace="/hsy" extends="struts-default">
+		<action name="pcuser_*" method="{1}" class="hsy.struts.pcuser">
+		<result name="pcshow">/hsy/pcshow.jsp</result>
+		<result name="gw">/hsy/gw.jsp</result>
+	  <result name="showrw">/hsy/Showrenwu.jsp</result>
+		</action>
+		
+		<action name="rwuser_*" method="{1}" class="hsy.struts.RWuser">
+	    <result name="diaodu">/hsy/Diaodu.jsp</result>
+	    <result name="showsave">/hsy/Diaodu.jsp</result>
+	     <result name="testok">/hsy/theerror.jsp</result>
+	      <result name="saveok">/hsy/Diaodu.jsp</result>
+	    <result name="add">/hsy/add.jsp</result>
+	      <result name="error">/hsy/theerror.jsp</result>
+		</action>
+		</package>
+		</struts>    

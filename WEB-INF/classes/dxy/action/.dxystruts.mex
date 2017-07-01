@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="dxy" location="225,108" size="228,406">
+    <action name="findattendance_*" location="19,64" size="150,62">
+      <result name="Find">
+        <resourceEdge source="Find" routing="0" target="attendanceinfo.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="evaluation_*" location="17,188" size="150,83">
+      <result name="Find">
+        <resourceEdge source="Find" routing="0" target="evaluation.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="selectevaluation.jsp" />
+      </result>
+    </action>
+    <action name="searchperformance_*" location="19,299" size="150,83">
+      <result name="Find">
+        <resourceEdge source="Find" routing="0" target="evaluation.jsp" />
+      </result>
+      <result name="failed">
+        <resourceEdge source="failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="performanceinfo.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="attendanceinfo.jsp" path="/dxy/attendanceinfo.jsp" location="290,10" size="150,55" />
+  <webResource name="error.jsp" path="/dxy/error.jsp" location="570,150" size="150,55" />
+  <webResource name="evaluation.jsp" path="/dxy/evaluation.jsp" location="24,412" size="150,55" />
+  <webResource name="selectevaluation.jsp" path="/dxy/selectevaluation.jsp" location="10,290" size="150,55" />
+  <webResource name="performanceinfo.jsp" path="/dxy/performanceinfo.jsp" location="502,446" size="150,55" />
+</Struts2Diagram>
+

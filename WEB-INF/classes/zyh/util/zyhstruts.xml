@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 第一个Action,用来响应工位信息相关事件 -->
+	<package name="zyh" namespace="/zyh" extends="struts-default">
+<action name="FindStationInfo_*" method="{1}" class="zyh.action.FindStationInfo">
+	<result name="Del">/zyh/error.jsp</result>
+	<result name="Failed">/zyh/error.jsp</result>
+	<result name="SearchAll">/zyh/StationInfoList.jsp</result>
+	<result name="SearchSelection">/zyh/StationInfoList.jsp</result>
+	<result name="update">/zyh/StationInfoList.jsp</result>
+	<result name="oneToMore">/zyh/StationInfoList.jsp</result>
+</action>
+
+<action name="FindProductionLineInfo_*" method="{1}" class="zyh.action.FindProductionInfo">
+	<result name="Del">/zyh/error.jsp</result>
+	<result name="Failed">/zyh/error.jsp</result>
+	<result name="SearchAll">/zyh/ProductionInfoList.jsp</result>
+	<result name="SearchSelection">/zyh/ProductionInfoList.jsp</result>
+	<result name="oneToMore">/zyh/ProductionInfoList1.jsp</result>
+	<result name="update">/zyh/ProductionInfoList.jsp</result>
+</action>
+
+<action name="FindFarmInfo_*" method="{1}" class="zyh.action.FindFarmInfo">
+	<result name="Del">/zyh/error.jsp</result>
+	<result name="Failed">/zyh/error.jsp</result>
+	<result name="SearchAll">/zyh/FarmInfoList.jsp</result>
+	<result name="SearchSelection">/zyh/FarmInfoList.jsp</result>
+	<result name="oneToMore">/zyh/FarmInfoList1.jsp</result>
+	<result name="update">/zyh/FarmInfoList.jsp</result>
+</action>
+	</package>
+
+</struts>    

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="gsq" namespace="/gsq" extends="struts-default">
+	
+	<action name="findwuliaozongbiao_*" method="{1}" class="gsq.action.findwuliaozongbiao">
+	<result name="Find">/gsq/summary.jsp</result>
+	<result name="DelInfo">/gsq/delsummary.jsp</result>
+	<result name="Del">/gsq/error.jsp</result>
+	<result name="SearchAll">/gsq/summarylist.jsp</result>
+	<result name="failed">/gsq/error.jsp</result>
+</action>
+<action name="savewuliaozongbiao" method="Save" class="gsq.action.savewuliaozongbiao">
+	<result>/gsq/summary.jsp</result>
+</action>
+
+
+<action name="findin_*" method="{1}" class="gsq.action.findin">
+	<result name="Find">/gsq/in.jsp</result>
+	<result name="DelInfo">/gsq/delin.jsp</result>
+	<result name="Del">/gsq/errorin.jsp</result>
+	<result name="SearchAll">/gsq/inlist.jsp</result>
+	<result name="failed">/gsq/errorin.jsp</result>
+	<result name="Tongji">/gsq/tongji.jsp</result>
+</action>
+<action name="savein" method="Save" class="gsq.action.savein">
+	<result>/gsq/in.jsp</result>
+</action>
+
+
+<action name="findout_*" method="{1}" class="gsq.action.findout">
+	<result name="Find">/gsq/out.jsp</result>
+	<result name="DelInfo">/gsq/delout.jsp</result>
+	<result name="Del">/gsq/errorout.jsp</result>
+	<result name="SearchAll">/gsq/outlist.jsp</result>
+	<result name="failed">/gsq/errorout.jsp</result>
+</action>
+<action name="saveout" method="Save" class="gsq.action.saveout">
+	<result>/gsq/out.jsp</result>
+</action>
+
+
+<action name="finddamage_*" method="{1}" class="gsq.action.finddamage">
+	<result name="Find">/gsq/damage.jsp</result>
+	<result name="DelInfo">/gsq/deldamage.jsp</result>
+	<result name="Del">/gsq/errordamage.jsp</result>
+	<result name="SearchAll">/gsq/damagelist.jsp</result>
+	<result name="failed">/gsq/errordamage.jsp</result>
+</action>
+<action name="savedamage" method="Save" class="gsq.action.savedamage">
+	<result>/gsq/damage.jsp</result>
+</action>
+
+
+<action name="findsemi_*" method="{1}" class="gsq.action.findsemi">
+	<result name="Find">/gsq/semi.jsp</result>
+	<result name="DelInfo">/gsq/delsemi.jsp</result>
+	<result name="Del">/gsq/errorsemi.jsp</result>
+	<result name="SearchAll">/gsq/semilist.jsp</result>
+	<result name="failed">/gsq/errorsemi.jsp</result>
+</action>
+<action name="savesemi" method="Save" class="gsq.action.savesemi">
+	<result>/gsq/semi.jsp</result>
+</action>
+
+
+<action name="findfini_*" method="{1}" class="gsq.action.findfini">
+	<result name="Find">/gsq/fini.jsp</result>
+	<result name="DelInfo">/gsq/delfini.jsp</result>
+	<result name="Del">/gsq/errorfini.jsp</result>
+	<result name="SearchAll">/gsq/finilist.jsp</result>
+	<result name="failed">/gsq/errorfini.jsp</result>
+</action>
+<action name="savefini" method="Save" class="gsq.action.savefini">
+	<result>/gsq/fini.jsp</result>
+</action>
+
+
+<action name="findshenqing_*" method="{1}" class="gsq.action.findshenqing">
+	<result name="Find">/gsq/semi.jsp</result>
+	<result name="DelInfo">/gsq/delsemi.jsp</result>
+	<result name="Del">/gsq/errorsemi.jsp</result>
+	<result name="SearchAll">/gsq/shenqinglist.jsp</result>
+	<result name="failed">/gsq/errorsemi.jsp</result>
+</action>
+<action name="saveshenqing" method="Save" class="gsq.action.saveshenqing">
+	<result>/gsq/semi.jsp</result>
+</action>
+
+	</package>
+</struts>    

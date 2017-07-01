@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="zp" namespace="/zp" extends="struts-default">
+
+		<action name="findequipment_*" method="{1}" class="zp.action.FindEquipment">
+			<result name="Find">/zp/equipmentbaseinfo.jsp</result>
+			<result name="DelInfo">/zp/equipmentdel.jsp</result>
+			<result name="Del">/zp/error.jsp</result>
+			<result name="SearchAll">/zp/equipmentbase.jsp</result>
+			<result name="failed">/zp/error.jsp</result>
+		</action>
+		<action name="saveequipment" method="Save" class="zp.action.SaveEquipment">
+			<result>/zp/equipmentbaseinfo.jsp</result>
+		</action>
+
+		<action name="findwork_*" method="{1}" class="zp.action.EqWork">
+			<result name="SearchAll">/zp/equipmentwork.jsp</result>
+			<result name="Find">/zp/equipmentworkinfo.jsp</result>
+			<result name="Save">/zp/equipmentworkinfo.jsp</result>
+			<result name="failed">/zp/error.jsp</result>
+		</action>
+
+		<action name="findlog_*" method="{1}" class="zp.action.EqLog">
+			<result name="SearchAll">/zp/equipmentlog.jsp</result>
+			<result name="DelByInstance">/zp/error.jsp</result>
+			<result name="Deleqlog">/zp/error.jsp</result>
+			<result name="FindbyDate">/zp/equipmentlog.jsp</result>
+			<result name="NeweqLog">/zp/eqloglist.jsp</result>
+		</action>
+		
+		<action name="summarywork" method="sumwork" class="zp.action.SummaryWork">
+			<result name="sumwork">/zp/eqindex.jsp</result>
+		</action>
+	</package>
+</struts>    

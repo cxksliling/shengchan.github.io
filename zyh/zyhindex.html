@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>让我来看看进度</title>
+
+<!-- Bootstrap core CSS -->
+<link
+	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css"
+	rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="navbar.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 这里是事件响应代码区，暂且不管，留到后面写-->
+
+</head>
+
+<body>
+
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					  <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+					  <span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">生产部管理系统</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							 <a href="../index.html">主页</a>
+						</li>
+						<li>
+							 <a href="#">关于</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							 <a href="#">Link</a>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			
+			
+			<!-- 这儿是HelloWorld开始的地方 -->
+			<div class="jumbotron">
+				<h1>
+					进度检测系统
+				</h1>
+				<p>
+					进度检测系统是生产管理系统的重要组成部分，负责实时检测每个工位、每个生产线、每个车间的生产信息，为整个工作的进行提供和计划的制作提供必要的保障!
+				</p>
+				<p>
+					 <a class="btn btn-primary btn-large" href="./zyhabout.html">了解更多</a>
+				</p>
+			</div>
+			<!-- 这里是那个三行数据的地方 -->
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="../img/Dataacquisition.jpg" />
+						<div class="caption">
+							<h3>
+								数据采集
+							</h3>
+							<p>
+									数据采集是进度检测中的一个重点过程，是进度检测的前提条件，通过数据采集从系统服务器获得待分析。
+							</p>
+							<p>
+								<!-- 这里是Action的响应事件的地方 -->
+								 <a class="btn btn-primary" href="./dataAcquisition.html">开始</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="../img/Dataanalyse.jpg" />
+						<div class="caption">
+							<h3>
+								数据分析
+							</h3>
+							<p>
+								数据分析是进度检测的核心功能，是进度检测的重要组成部分，该功能的好坏直接影响进度检测的最终结果。
+								通过对数据采集子系统采集好的数据进行工位数据分析、生产线数据分析、车间数据分析来实时的显示工位、
+								生产线、车间的实时生产情况，给工位配置系统，任务配置系统以及排程系统提供实时反馈，便于更好的做出生产决策。
+							</p>
+							<p>
+								 <a class="btn btn-primary" href="./dataAnalyse.html">开始</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="../img/Datadisplay.jpg" />
+						<div class="caption">
+							<h3>
+								数据显示
+							</h3>
+							<p>
+								数据显示子系统是进度检测系统的最后一部分，也是最为重要的一部分，如果没有这部分，前面的工作都是多余的。
+								数据显示子系统通过对数据分析部分分析结果入库和结果显示两部分来完成数据实时显示的工作。
+							</p>
+							<p>
+								 <a class="btn btn-primary" href="./dataDisplay.html">开始</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="margin-base-vertical" align="right">
+					<small class="text-muted">Powered by <a href="http://localhost:8080/sc/">@2017 进度检测系统负责人---赵彦海</a>.</small>
+				</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+

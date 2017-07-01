@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="dxy" namespace="/dxy" extends="struts-default">
+	
+	<action name="findattendance_*" method="{1}" class="dxy.action.FindAttendance">
+	 <result name="Find">/dxy/attendanceinfo.jsp</result>
+     <result name="failed">/dxy/error.jsp</result>   
+     <result name="Del">/dxy/error.jsp</result>
+</action>
+
+	<action name="evaluation_*" method="{1}" class="dxy.action.Evaluation">
+	 <result name="Find">/dxy/evaluation.jsp</result>
+     <result name="failed">/dxy/error.jsp</result>   
+     <result name="SearchAll">/dxy/selectevaluation.jsp</result>
+</action>
+
+	<action name="searchperformance_*" method="{1}" class="dxy.action.SearchPerformance">
+	 <result name="Find">/dxy/performanceinfo.jsp</result>
+     <result name="failed">/dxy/error.jsp</result>   
+     <result name="SearchAll">/dxy/performanceinfo.jsp</result>
+</action>
+
+<action name="searchattendance_*" method="{1}" class="dxy.action.SearchAttendance">
+	 <result name="Find">/dxy/attendancelist.jsp</result>
+     <result name="failed">/dxy/error.jsp</result>   
+     <result name="SearchAll">/dxy/attendancelist.jsp</result>
+</action>
+
+	<action name="evaluationlogic_*" method="{1}" class="dxy.action.EvaluationLogic">
+	 <result name="SearchAll">/dxy/evaluationlogic.jsp</result>
+</action>
+
+<action name="saveevaluation" method="Save" class="dxy.action.SaveEvaluation">
+	<result>/dxy/evaluation.jsp</result>
+</action>
+<action name="saveevaluationlogic" method="Save" class="dxy.action.SaveEvaluationLogic">
+	<result>/dxy/evaluationlogic.jsp</result>
+</action>
+<action name="saveattendance" method="Save" class="dxy.action.SaveAttendance">
+	<result>/dxy/attendanceinfo.jsp</result>
+</action>
+	</package>
+
+
+</struts>    

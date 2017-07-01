@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="ll" namespace="/ll" extends="struts-default">
+	
+	<action name="findworker_*" method="{1}" class="ll.action.FindWorker">
+		<result name="Find">/ll/workerinfo.jsp</result>
+		<result name="failed">/ll/error.jsp</result>
+		<result name="SearchAll">/ll/workerinfolist.jsp</result>
+		<result name="DelInfo">/ll/delworkerinfo.jsp</result>
+		<result name="Del">/ll/error.jsp</result>
+	</action>
+	
+	<action name="saveworker" method="Save" class="ll.action.SaveWorker">
+		<result>/ll/workerinfo.jsp</result>
+		<result name="failed">/ll/error.jsp</result>
+	</action>
+	
+	<action name="findrequirednumber_*" method="{1}" class="ll.action.FindWork">
+		<result name="Find">/ll/workernumberrequiredlist.jsp</result>
+	</action>
+	
+	<action name="assignworker" method="doAssign" class="ll.action.AssignWorker">
+		<result>/ll/workerassignlist.jsp</result>
+	</action>
+	
+	<action name="index" method="index" class="ll.action.Index">
+		<result>/ll/index.jsp</result>
+	</action>
+
+</package>
+</struts>    

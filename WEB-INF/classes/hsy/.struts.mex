@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="users" location="262,62" size="280,245">
+    <action name="pcuser_*" location="72,54" size="150,62">
+      <result name="pcshow">
+        <resourceEdge source="pcshow" routing="0" target="pcshow.jsp" />
+      </result>
+      <result name="gw">
+        <resourceEdge source="gw" routing="0" target="gw.jsp" />
+      </result>
+    </action>
+    <action name="rwuser_*" location="72,159" size="150,83">
+      <result name="diaodu">
+        <resourceEdge source="diaodu" routing="0" target="Diaodu.jsp" />
+      </result>
+      <result name="showsave">
+        <resourceEdge source="showsave" routing="0" target="Diaodu.jsp" />
+      </result>
+      <result name="add">
+        <resourceEdge source="add" routing="0" target="add.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="pcshow.jsp" path="/pcshow.jsp" location="56,55" size="150,55" />
+  <webResource name="gw.jsp" path="/gw.jsp" location="570,52" size="150,55" />
+  <webResource name="Diaodu.jsp" path="/Diaodu.jsp" location="133,376" size="150,55" />
+  <webResource name="add.jsp" path="/add.jsp" location="573,363" size="150,55" />
+</Struts2Diagram>
+

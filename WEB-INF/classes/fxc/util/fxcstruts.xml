@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="fxc" namespace="/fxc" extends="struts-default">
+
+		<action name="FindMonitor_*" method="{1}"
+			class="fxc.action.FindMonitor">
+			<result name="FindShop">/fxc/FindShopMonitorInfo.jsp</result>
+			<result name="FindMachine">/fxc/FindMachineMonitorInfo.jsp</result>
+			<result name="failed">/fxc/error.jsp</result>
+			<result name="SearchAll">/fxc/MonitorInfoList.jsp</result>
+		</action>
+
+
+
+		<action name="FindHandling_*" method="{1}"
+			class="fxc.action.FindHandling">
+			<result name="FindShop">/fxc/FindShopHandlingInfo.jsp</result>
+			<result name="FindMachine">/fxc/FindMachineHandlingInfo.jsp</result>
+			<result name="failed">/fxc/error.jsp</result>
+			<result name="SearchAll">/fxc/HandlingInfoList.jsp</result>
+		</action>
+
+
+
+
+		<action name="FindStatistics_*"
+			class="fxc.action.FindStatistics">
+			<result name="FindHandlerId">/fxc/FindHandlingStatisticsInfo.jsp</result>
+			<result name="failed">/fxc/error.jsp</result>
+			<result name="SearchAll">/fxc/StatisticsInfoList.jsp</result>
+		</action></package>
+
+
+</struts>    

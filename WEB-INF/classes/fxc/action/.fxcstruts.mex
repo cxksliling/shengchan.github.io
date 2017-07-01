@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="fxc" location="51,38" size="222,453">
+    <action name="FindProductionMonitor_*" location="8,28" size="174,62">
+      <result name="Find" />
+      <result name="failed" />
+    </action>
+    <action name="FindMachineMonitor_*" location="7,99" size="174,83">
+      <result name="Find" />
+      <result name="failed" />
+      <result name="SearchAll" />
+    </action>
+    <action name="HandlingProductionMonior_*" location="6,190" size="197,83">
+      <result name="Find" />
+      <result name="failed" />
+      <result name="SearchAll" />
+    </action>
+    <action name="Statistics_*" location="11,349" size="175,41">
+      <result name="SearchAll" />
+    </action>
+  </package>
+</Struts2Diagram>
+

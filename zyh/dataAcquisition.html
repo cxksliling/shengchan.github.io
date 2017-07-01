@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>查询大西瓜信息</title>
+<script src="../Js/jquery-1.11.3.min.js"></script>
+<link href="../Js/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet"/>
+<script src="../Js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<link href="../Js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+<script src="../Js/bootstrap-datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="../Js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="Css/bootstrap-datetimepicker.min.css">
+<script src="Js/bootstrap-datetimepicker.js"></script>
+<script src="Js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript"></script>
+<script src="../Js/jquery-1.11.3.min.js"></script>
+<script src="../Js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../Js/bootstrap-datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="../Js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="moment.js"></script>
+<script type="text/javascript" src="daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="daterangepicker-bs3.css" />
+<!-- Bootstrap core CSS -->
+<link
+	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css"
+	rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="navbar.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+function frmSubmit1(form){
+        form.action = "./FindStationInfo_SearchSelection.action";
+        form.submit();
+}
+function frmSubmit2(form){
+        form.action = "./FindProductionLineInfo_SearchSelection.action";
+        form.submit();
+}
+function frmSubmit3(form){
+        form.action = "./FindFarmInfo_SearchSelection.action";
+        form.submit();
+}
+</script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">进度检测系统</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="./zyhindex.html">主页</a></li>
+						<li><a href="./FindStationInfo_SearchAll.action">工位信息采集</a></li>
+						<li><a href="./FindProductionLineInfo_SearchAll.action">生产线信息采集</a></li>
+						<li><a href="./FindFarmInfo_SearchAll.action">车间信息采集</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="./">Default <span
+								class="sr-only">(current)</span> </a></li>
+						<li><a href="../navbar-static-top/">Static top</a></li>
+						<li><a href="../navbar-fixed-top/">Fixed top</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container" align="left">
+			<div class="row"> 
+				<div class="col-lg-4">
+						<form class="form-signin">
+							<h2 class="form-signin-heading">查询工位信息</h2>
+							<label for="stationid" class="sr-only">输入工位ID:</label> 
+							<input
+								type="text" id="stationid" name="stationid"
+								class="form-control" style="width:200px;" placeholder="请输入工位ID"
+								required autofocus>
+							<!--<label for="stationtime1" class="sr-only">请输入时间：</label> 
+							<input
+								type="text" id="stationtime1" name="stationtime1"
+								class="form-control" style="width:200px;" placeholder="请输入时间"
+								required autofocus>  -->
+							<div class="checkbox"></div>
+							<div class="container">
+								<button class="btn btn-primary" style="width:120px;"
+									type="submit" onclick="frmSubmit1(this.form)">查询</button>
+							</div>
+
+						</form>
+					</div>
+					<div class="col-lg-4">
+						<form class="form-signin">
+							<h2 class="form-signin-heading">查询生产线信息</h2>
+							<label for="ProductionLineid" class="sr-only">输入生产线ID:</label> 
+							<input
+								type="text" id="ProductionLineid" name="ProductionLineid"
+								class="form-control" style="width:200px;" placeholder="请输入生产线ID"
+								required autofocus>
+							<!-- <label for="stationtime2" class="sr-only">请输入时间：</label> 
+							<input
+								type="text" id="stationtime2" name="stationtime2"
+								class="form-control" style="width:200px;" placeholder="请输入时间"
+								required autofocus> -->
+							<div class="checkbox"></div>
+							<div class="container">
+								<button class="btn btn-primary" style="width:120px;"
+									type="submit" onclick="frmSubmit2(this.form)">查询</button>
+							</div>
+
+						</form>
+					</div>
+					<div class="col-lg-4">
+						<form class="form-signin">
+							<h2 class="form-signin-heading">查询车间信息</h2>
+							<label for="Farmid" class="sr-only">输入车间ID:</label> 
+							<input
+								type="text" id="Farmid" name="Farmid"
+								class="form-control" style="width:200px;" placeholder="请输入车间ID"
+								required autofocus>
+							<div class="checkbox"></div>
+							<div class="container">
+								<button class="btn btn-primary" style="width:120px;"
+									type="submit" onclick="frmSubmit3(this.form)">查询</button>
+							</div>
+
+						</form>
+					</div>
+			</div>
+				<form class="form-signin">
+					<h2 class="form-signin-heading">数据采集</h2>
+					<h3>数据采集是进度检测中的一个重点过程，是进度检测的前提条件，通过数据采集从系统服务器获得待分析。</h3>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+	</script>
+	<script
+		src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+$(function(){
+$('#datetimepicker1').datetimepicker({
+format:'YYYY-MM-DD',
+locale:moment.locale('zh-cn')
+});
+$('#datetimepicker2').datetimepicker({
+format: 'YYYY-MM-DD hh:mm',
+locale: moment.locale('zh-cn')
+});
+});
+</script>
+</body>
+</html>
+
+

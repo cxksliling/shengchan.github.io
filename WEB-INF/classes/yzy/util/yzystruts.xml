@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="yzy" namespace="/yzy" extends="struts-default">
+		<action name="wuma_*" class="yzy.action.wuma" method="{1}">
+			<result name="SearchAll">/yzy/wumainfolist.jsp</result>
+			<result name="Find">/yzy/wumainfo.jsp</result>
+			<result name="Save">/yzy/wumainfo.jsp</result>
+			<result name="FindDel">/yzy/deletewuma.jsp</result>
+			<result name="Del">/yzy/error.jsp</result>
+		</action> 
+		
+			<action name="wuji_*" class="yzy.action.wuji" method="{1}">
+		<result name="SearchAll">/yzy/wujiinfolist.jsp</result>
+	   <result name="Find">/yzy/wujiinfo.jsp</result>
+			<result name="Save">/yzy/wujiinfo.jsp</result>
+				<result name="FindDel">/yzy/deletewuji.jsp</result>
+			<result name="Del">/yzy/error2.jsp</result>
+			</action>
+			
+			<action name="shenqing_*" class="yzy.action.shenqing" method="{1}">
+			<result name="Save">/yzy/success.jsp</result>
+			</action>
+    </package>
+</struts>    

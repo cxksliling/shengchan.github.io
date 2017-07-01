@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="zyh" location="10,10" size="289,454">
+    <action name="FindStationInfo_*" location="68,46" size="150,125">
+      <result name="Del">
+        <resourceEdge source="Del" routing="0" target="error.jsp" />
+      </result>
+      <result name="Failed">
+        <resourceEdge source="Failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="StationInfoList.jsp" />
+      </result>
+      <result name="SearchSelection">
+        <resourceEdge source="SearchSelection" routing="0" target="StationInfoList.jsp" />
+      </result>
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="StationInfoList.jsp" />
+      </result>
+    </action>
+    <action name="FindProductionLineInfo_*" location="67,189" size="150,104">
+      <result name="Del">
+        <resourceEdge source="Del" routing="0" target="error.jsp" />
+      </result>
+      <result name="Failed">
+        <resourceEdge source="Failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="ProductionInfoList.jsp" />
+      </result>
+      <result name="SearchSelection">
+        <resourceEdge source="SearchSelection" routing="0" target="ProductionInfoList.jsp" />
+      </result>
+    </action>
+    <action name="FindFarmInfo_*" location="74,332" size="150,104">
+      <result name="Del">
+        <resourceEdge source="Del" routing="0" target="error.jsp" />
+      </result>
+      <result name="Failed">
+        <resourceEdge source="Failed" routing="0" target="error.jsp" />
+      </result>
+      <result name="SearchAll">
+        <resourceEdge source="SearchAll" routing="0" target="FarmInfoList.jsp" />
+      </result>
+      <result name="SearchSelection">
+        <resourceEdge source="SearchSelection" routing="0" target="FarmInfoList.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="StationInfoList.jsp" path="/zyh/StationInfoList.jsp" location="343,31" size="150,55" />
+  <webResource name="error.jsp" path="/zyh/error.jsp" location="377,161" size="150,55" />
+  <webResource name="ProductionInfoList.jsp" path="/zyh/ProductionInfoList.jsp" location="361,297" size="150,55" />
+  <webResource name="FarmInfoList.jsp" path="/zyh/FarmInfoList.jsp" location="363,423" size="150,55" />
+</Struts2Diagram>
+
